@@ -1,0 +1,21 @@
+{
+    "name": "stupidlysimple/php-core",
+    "description": "The core package for Stupidly Simple framework",
+    "keywords": ["micro framework","lazy","stupidly simple", "php framework", "php 7", "hhvm"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [{
+        "name": "Fariz Luqman",
+        "email": "fariz.fnb@gmail.com",
+        "homepage": "https://stupidlysimple.github.io",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "src"
+        }
+    }
+}
