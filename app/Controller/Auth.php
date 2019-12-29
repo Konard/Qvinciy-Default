@@ -1,13 +1,7 @@
 <?php
-/**
- * StupidlySimple - A PHP Framework For Lazy Developers
- *
- * @package		StupidlySimple
- * @author		Fariz Luqman <fariz.fnb@gmail.com>
- * @copyright	2017 Fariz Luqman
- * @license		MIT
- * @link		https://stupidlysimple.github.io/
- */
+
+//контроллер авторизации
+
 namespace Controller;
 
 use Sentinel;
@@ -16,6 +10,7 @@ use Request;
 use Viewer;
 
 class Auth {
+
     public function __construct()
     {
     }
@@ -33,13 +28,11 @@ class Auth {
     public function doAuthenticate()
     {
         try{
-            // Login credentials
             $credentials = array(
                 'email'    => Request::get('email'),
                 'password' => Request::get('password')
             );
             
-            // Authenticate the user
             Sentinel::authenticate($credentials, false);
 
         }catch (\Cartalyst\Sentinel\Users\LoginRequiredException $e){

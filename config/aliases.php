@@ -1,5 +1,7 @@
 <?php
+
 //Определение Псевдонимов для модулей
+
 return [
 	'Core\App' => 'App',
 	'Core\Cache' => 'Cache',

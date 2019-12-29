@@ -1,5 +1,7 @@
 <?php
-// Настройка определения роутеров
+
+// Определение роутеров
+
 return 
 [
     'path' => SS_PATH . 'routes' . '/',
@@ -7,7 +9,6 @@ return
     [
         'web',
         'api',
-        'auth',
-        'hello'
+        'auth'
     ]
 ];

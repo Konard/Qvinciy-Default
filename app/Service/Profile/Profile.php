@@ -1,4 +1,7 @@
 <?php
+
+//Сервис для работы с моделью пользователя в шаблоне
+
 namespace Service\Profile;
 
 use ServiceContainer;
